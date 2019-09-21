@@ -1,0 +1,90 @@
+ @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+h1{
+  color: #c12258;
+  font-size: 2em;
+  line-height: 1.5;
+
+}
+p{
+  color: black;
+  font-size: 18px;
+  padding-top: 15px;
+}
+body{
+  background: #dddddd url('../images/pidgeon-background.jpg') no-repeat;
+  font-family: 'Quicksand' ,sans-serif;
+
+}
+a{
+  color:#c12258;
+  font-size: 18px;
+  text-decoration: underline;
+}
+a:focus {
+  /* Should I do outline: none? also is a:focus correct? */
+  outline: none;
+  border: 1px solid red;
+}
+
+table{
+  /* should it be tbody or thead or both? */
+  border: 2px solid black;
+  border-collapse:separate;
+  /* border-spacing: 0; */
+  border-radius: 10px;
+}
+thead th {
+  width: 150px;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #7e0830;
+
+}
+tbody td{
+  border-bottom: 2px solid black;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+}
+tbody th{
+  border-bottom: 2px solid black;
+}
+tr:last-child th:first-child{
+  border-bottom: 0px;
+}
+tr:last-child td{
+  border-bottom: 0px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr:hover {background-color: #fab9cf;}
+/* rounding borders */
+tbody tr:last-child td:last-child{
+  border: 0;
+  border-bottom-right-radius: 10px;
+}
+tbody tr:last-child th:first-child{
+  border-bottom-left-radius: 10px;
+}
+thead tr:first-child th:first-child{
+  border-top-left-radius: 10px;
+}
+thead tr th:last-child{
+  border-top-right-radius: 10px;
+}
+
+footer p{
+  padding-left: 0px;
+  color: white;
+  background-color: black;
+  height: 60px;
+  position: fixed;
+  width:100%;
+  bottom: 0;
+  text-align: center;
+}
